@@ -1,3 +1,53 @@
 body{
-    background-color: ;
+    background-color: #F5F5DC;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Dropdown menu */
+
+.menu {
+    position: relative; 
+    text-align: right;
+  }
+  
+  .menu-btn {
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #FF6F3C;
+    margin-right: 50px;
+    text-align: right;
+  }
+  
+  .dropdown-content {
+    display: none; /* Skjuler dropdown som standard */
+    position: absolute;
+    top: 50px; /* Position under knappen */
+    right: 0;
+    background-color: #F5F5DC;
+    border: 3px solid #FF6F3C;
+    width: 180px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    color: #FF6F3C;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #d3bcb0;
+  }
+  
+  .menu:hover .dropdown-content {
+    display: block;
+  }
