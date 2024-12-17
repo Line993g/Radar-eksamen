@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar</title>
+    <link rel="stylesheet" href="CSS/css.css">
+    <link rel="stylesheet" href="CSS/frivillig.css">
+
+    <meta name="title" content="Radar | Frivillig">
+  <meta name="description" content="Her kan du læse om hvordan det er at være frivillig hos Radar! Og se en masse stemnings billeder fra stedet og stemningen.  Desuden kan du nemt ansøge om at blive frivillig der.">
+  <meta name="keywords" content="Frivillig, Frivilligt arbejde i Aarhus, Bliv frivillig hos Radar, Musik og frivillighed, Frivilligt arbejde">
+  <meta name="robots" content="index, follow">
+
+</head>
+<body>
+
+  
+
+
+<!--Kodningen til burgermenu-->
+
+    <nav class="navbar">
+        <button class="menu-btn">☰</button>
+        <ul class="menu">
+          <!-- Arrangementer -->
+          <li class="submenu">
+            <a href="#">Arrangementer</a>
+            <ul class="submenu-content">
+              <li><a href="arrangementer.html">Kommende arrangementer</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Billetsalg</a></li>
+              <li><a href="#">Upcoming kunstner</a></li>
+            </ul>
+          </li>
+          <!-- Hvem er vi? -->
+          <li class="submenu">
+            <a href="#">Hvem er vi?</a>
+            <ul class="submenu-content">
+              <li><a href="#">Radars historie</a></li>
+              <li><a href="#">Radars passion</a></li>
+              <li><a href="kunstner.html">Bag om kunstnerne</a></li>
+            </ul>
+          </li>
+          <!-- Minder fra Radar -->
+          <li class="submenu">
+            <a href="#">Minder fra Radar</a>
+            <ul class="submenu-content">
+              <li><a href="#">Tidligere arrangementer</a></li>
+              <li><a href="#">Billedgalleri</a></li>
+              <li><a href="#">Anmeldelser</a></li>
+            </ul>
+          </li>
+          <!-- Bliv en del af Radar -->
+          <li class="submenu">
+            <a href="#">Bliv en del af Radar</a>
+            <ul class="submenu-content">
+              <li><a href="#">Medlemsskab</a></li>
+              <li><a href="frivillig.html">Bliv frivillig</a></li>
+              <li><a href="#">Donation</a></li>
+              <li><a href="#">Sponsorater</a></li>
+            </ul>
+          </li>
+          <!-- Om os -->
+          <li class="submenu">
+            <a href="#">Om os</a>
+            <ul class="submenu-content">
+              <li><a href="#">Praktisk information</a></li>
+              <li><a href="#">Ofte stillede spørgsmål</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Sociale medier</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+   
+      <script src="script.js"></script>
+
+<!--Kodning til logo-->
+
+<div class="logo">
+    <a href="index.html">
+    <img src="images/logo.png" width="100px" alt="logo">
+    </a>
+ </div>
+
+ <div class="baggrund"></div>
+ <img src="images/frivillig.png" alt="frivillig" width="100%" height="100%">
+</div>
+
+
+
+<!--Kodningen til pop up billeder-->
+<div class="node">
+<img src="images/node.png" width="250" alt="node">
+</div>
+
+<div class="mikrofon">
+<img src="images/mikrofonsort.png" width="200" alt="mikrofon">
+</div>
+
+
+<h1>BLIV FRIVILLIG</h1>
+<div class="main-container">
+
+<div>Er du vild med live musik i Aarhus og brænder for at opleve musikken på tæt hold? Hos Radar Aarhus har du mulighed for at kombinere din passion for musik med frivilligt arbejde til koncerter – og blive en vigtig del af et kreativt fællesskab.
+
+    Radar er ikke som andre spillesteder. Her møder du upcoming kunstnere og musikgenrer, der er med til at skubbe til grænser. Som frivillig får du en unik chance for at opleve alt fra inspirerende kunst til energiske live-optrædener, mens du samtidig hjælper med at skabe den helt særlige stemning, som vi hos Radar er kendt for.
+    
+    Der er mange fordele ved frivilligt arbejde i Aarhus – især hos Radar. Du bliver en del af et engageret team, lærer nye mennesker at kende og får erfaring, der kan gavne dig i fremtiden. Og så er der selvfølgelig musikken – live, intens og lige i hjertet af Aarhus.
+    
+    Lyder det som noget for dig? Bliv frivillig på Radar og oplev, hvordan dit engagement for musikken kan gøre en forskel – både for kunstnerne, publikum og dig selv.
+    
+    Gør din passion til en oplevelse. Radar venter på dig.</div>
+
+</div>
+
+<!--Kodning til billedrække-->
+
+
+<div class="scroll-container">
+    <div class="image-item"><img src="images/frivillig1.jpeg" alt="Billede 1"></div>
+    <div class="image-item"><img src="images/frivillig2.png" alt="Billede 2"></div>
+    <div class="image-item"><img src="images/frivillig3.png" alt="Billede 3"></div>
+    <div class="image-item"><img src="images/frivillig4.png" alt="Billede 4"></div>
+    <div class="image-item"><img src="images/frivillig5.png" alt="Billede 5"></div>
+    <div class="image-item"><img src="images/frivillig6.png" alt="Billede 6"></div>
+    <div class="image-item"><img src="images/frivillig7.png" alt="Billede 7"></div>
+    <div class="image-item"><img src="images/frivillig8.png" alt="Billede 8"></div>
+
+</div>
+
+
+
+<!--Kodning til ansøgnings felter-->
+<h1>KOM MED PÅ ET FANTASTISK TEAM</h1>
+<div class="ansøg">
+<form action="/submit-ansogning" method="POST">
+    <label for="fullname">Fulde Navn:</label>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="phone">Telefonnummer:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="birthdate">Fødselsdag:</label>
+    <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="effort">Ønskede Indsats:</label>
+    <input type="text" id="effort" name="effort" required><br><br>
+
+    <label for="motivation">Motiveret Ansøgning (Kort):</label><br>
+    <textarea id="motivation" name="motivation" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Indsend Ansøgning">
+</form>
+</div>
+
+
+
+
+
+
+<!--Kodning af footer-->
+  
+<footer>
+  <div class="aabeningstider">
+      <p>Åbningstider Foodhall</p>
+      <p>Man - Ons: Lukket</p>
+      <p>Tor - Lør: 19 - 23:30</p>
+      <p>Søndag: LUKKET</p>
+  </div>
+
+  
+  <div class="nyhedsbrev">
+    <form action=""></form>
+    <label for="email">Tilmeld dig vores nyhedsbrev og gå ikke glip af kommende events.</label>
+  <input type="email" id="email" name="email" placeholder="Indtast din e-mail" required>
+  <button type="submit">Tilmeld</button>
+  </div>
+  
+  <div class="lokation">
+      <p>Lokation</p>
+      <p>Karen Wegeners Gade 6<br>DK 8000 Aarhus C</p>
+      <p>Kontakt</p>
+      <p> +45 8676 0344 <br>booking(@)radarlive.dk & <br>
+        kontakt(@)radarlive.dk</p>
+  </div>
+
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+.main-container{
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2.5;
+  margin-bottom: 40px;
+}
+
+/* Styling på logo*/
+.logo{
+  z-index: 2;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+
+/* Baggrundsbillede */
+.baggrund{
+  position: relative; /* Gør headeren en kontekst for absolut positionering */
+  width: 100%;
+  overflow: hidden; /* Sikrer, at elementer uden for headerens grænser skjules */
+  z-index: 1;
+  margin: 0px;
+}
+
+/* Styling på pop up billeder*/
+.guitar{
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  margin-left: 25px;
+  margin-top: -600px;
+  transform: rotate(10deg);
+}
+
+.noder{
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  margin-left: 1300px;
+  margin-top: -200px;
+  transform: rotate(30deg);
+}
+
+/* Styling på billedrække i bunden*/ 
+.image-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.image-row img {
+  max-width: 450px;
+  max-height: 236px;
+  margin-bottom: 30px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.billede{
+  display: none;
+}
+
+.navbar {
+  margin-top: 20px;
+  }
+
+
+  /* Styling for iPhone screens */
+@media (max-width: 768px) {
+  .main-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.5;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+
+  .guitar, .noder{
+    display: none;
+  }
+
+  .logo img{
+    width: 80px;
+    margin-top: -25px;
+    margin-left: -2px;
+  }
+  
+
+ .menu-btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  transform: translateX(150px);
+  margin-top: 0px;
+}
+
+.image-row{
+  display: none;
+}
+
+.baggrund img{
+  max-width: 10%;
+}
+
+}
+
+/* Styling af iPad scrren */
+@media (min-width: 769px) and (max-width: 1194px) {
+  .logo img {
+    width: 100px;
+    margin-top: -10px;
+    margin-left: -2px;
+  }
+
+.guitar{
+  margin-left: -75px;
+  margin-top: -900px;
+  transform: rotate(-10deg);
+}
+
+.noder{
+  margin-left: 900px;
+  margin-top: -200px;
+  transform: rotate(30deg);
+}
+
+.main-container {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2.5;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.image-row img {
+  max-width: 250px;
+  max-height: 238px;
+  margin-bottom: 30px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+}

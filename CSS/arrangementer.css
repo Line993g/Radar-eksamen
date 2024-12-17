@@ -1,0 +1,263 @@
+
+body{
+    background-color: #F5F5DC;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1{
+    position: relative;
+    top: 100px;
+    margin-bottom: 100px;
+  }
+
+
+.bingo {
+  display: flex;
+  align-items: center; /* Vertikal centrering */
+  justify-content: space-between; /* Giver plads mellem billede og tekst */
+  gap: 20px; /* Afstand mellem billede og tekst */
+  margin-left: 50px;
+  text-align: center;
+  width: 1300px;
+  line-height: 2;
+}
+
+.bingo img {
+  width: 400px; /* Bevarer din billedstørrelse */
+  height: auto; /* Sørger for at billedet bevarer sit forhold */
+  margin-right: 30px;
+  margin-left: 20px;
+}
+
+.text {
+  max-width: 60%; /* Begrænser tekstens bredde, så den ikke bliver for bred */
+}
+
+.text h2 {
+  font-size: 24px; /* Størrelse på overskriften */
+  margin-bottom: 10px; /* Lidt afstand under overskriften */
+}
+
+.text p {
+  font-size: 16px; /* Juster fontstørrelsen på teksten */
+  margin-right: 10px;
+}
+
+.ticket-button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FF6F3C;
+  background-color: #F5F5DC; 
+  border: 2px solid #FF6F3C;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.ticket-button:hover {
+  background-color: #f39e80;
+}
+
+.open-mic {
+  display: flex;
+  align-items: center; /* Vertikal centrering */
+  justify-content: space-between; /* Giver plads mellem billede og tekst */
+  gap: 20px; /* Afstand mellem billede og tekst */
+  margin-left: 50px;
+  text-align: center;
+  width: 1300px;
+  line-height: 2;
+}
+
+.text2 {
+  flex: 1; /* Fylder den tilgængelige plads */
+}
+
+img {
+  max-width: 100%; /* Sørger for, at billedet ikke bliver for stort */
+  height: auto; /* Bevarer billedets proportioner */
+  max-height: 300px; /* Valgfri grænse for billedets højde */
+}
+
+.ticket-button2 {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FF6F3C;
+  background-color: #F5F5DC; 
+  border: 2px solid #FF6F3C;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+.ticket-button2:hover {
+  background-color: #f39e80;
+}
+
+/* Box til ideer */
+.forslag {
+  text-align: center;
+  margin: 60px;
+  font-size: 20px;
+}
+
+.forslag textarea {
+  width: 80%; /* Justér bredden som ønsket */
+  max-width: 600px; /* Sæt en maksimum bredde for større skærme */
+  height: 150px; /* Justér højden som ønsket */
+  padding: 10px;
+  margin: 20px auto; /* Centrerer boksen og tilføjer margin */
+  font-size: 1em;
+  border: 2px solid #FF6F3C;
+  border-radius: 5px;
+  display: block; /* Sørg for, at textarea er et blok-element */
+  background-color: #F5F5DC;
+  color: #f39e80;
+}
+
+.send-knap {
+  background: none;
+  border: 2px solid #FF6F3C;
+  padding: 5px 20px;
+  color: #FF6F3C;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  font-size: 0.8em;
+}
+
+ /* Styling for iPhone screens */
+ @media (max-width: 768px){
+  h1{
+  font-size: 30px;
+  }
+
+  .logo img{
+    width: 80px;
+    margin-top: -10px;
+  }
+
+  .menu-btn {
+    position: fixed; /* Hold den synlig på skærmen */
+    top: 0;
+    right: 0;
+    width: 80%; /* Gør den fuld bredde */
+    height: auto;
+    margin-right: -110px;
+  }
+    /* Justering af bingo sektionen */
+    .bingo {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 300px;
+    }
+  
+    /* Billedet skal være på toppen */
+    .bingo img {
+      width: 100%; /* Billedet fylder hele bredden på mindre skærme */
+      max-width: 400px; /* Bevarer maksimal billedbredde */
+      margin-left: 55px;
+    }
+  
+    /* Teksten under billedet */
+    .text {
+      width: 300px; /* Sørger for, at teksten fylder hele bredden */
+      text-align: center;
+      font-size: 20px;
+    }
+  
+    .text h2 {
+      font-size: 20px; /* Mindre overskrift på mindre skærme */
+     
+    }
+  
+    .ticket-button {
+      margin-top: 20px; /* Placer billetknappen under teksten */
+      font-size: 20px;
+    }
+  
+    /* Justering for den sekundære container (open-mic) */
+    .open-mic {
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
+    
+     
+    }
+  
+    .open-mic img {
+      order: 1; /* Sørger for at billedet kommer før teksten*/
+      margin-top: 10px;
+      width: 100%; /* Sørger for, at billedet fylder hele skærmen på små enheder */
+      max-width: 300px; 
+      margin-right: 55px;
+    }
+  
+    .text2 {
+      order: 2; /* Sørger for at teksten kommer under billeder*/
+      width: 300px; 
+      padding: 0 20px;
+      text-align: center;
+      font-size: 20px;
+      margin-right: 55px;
+    }
+  
+    .ticket-button2 {
+      margin-top: 20px; /* Placer billetknappen under teksten */
+      font-size: 20px;
+    }
+
+    .send-knap{
+      width: 100px;
+      height: 50px;
+      font-size: 25px;
+    }
+  }
+
+  /* Styling af iPad scrren */
+@media (max-width: 1194px) {
+
+  .forslag{
+    font-size: 20px;
+  }
+ 
+
+  .bingo{
+    width: 960px; /* Sørger for, at teksten fylder hele bredden */
+    padding: 0 20px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 2px;
+  }
+
+  .open-mic{
+    width: 960px; /* Sørger for, at teksten fylder hele bredden */
+    padding: 0 20px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 2px;
+  }
+
+  .send-knap{
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+  }
+
+  .ticket-button2 {
+    margin-top: 20px; /* Placer billetknappen under teksten */
+    font-size: 30px;
+  }
+  
+
+
+
+}

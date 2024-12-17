@@ -1,62 +1,213 @@
+
 body{
-    background-color: #F5F5DC;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: #F5F5DC;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  overflow-x: hidden;
 }
 
-/* Generel dropdown styling */
-.menu {
-  position: relative;
-  text-align: right;
+h1{
+  text-align: center;
+  color: #FF6F3C;
+  font-size: 50px;
+}
+
+/* Styling på logo*/
+.logo img{
+  z-index: 2;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 5px;
+  max-width: 100px;
+}
+
+
+/*Styling på burgermenu*/
+.navbar {
+position: fixed;
+color: #FF6F3C;
+text-align: right;
+align-items: end;
+z-index: 2;
+background-color: transparent;
+right: 0;
+margin-top: -20px;
 }
 
 .menu-btn {
-  font-size: 50px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  color: #FF6F3C;
-  margin-right: 50px;
+font-size: 50px;
+background-color: transparent;
+border: none;
+color: #FF6F3C;
+cursor: pointer;
+
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 50px;
-  right: 0;
-  background-color: #F5F5DC;
-  border: 3px solid #FF6F3C;
-  width: 200px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+/* Skjul menu som standard */
+.menu {
+list-style-type: none;
+padding: 10px;
+margin: 15px;
+display: none; /* Skjuler menuen */
+flex-direction: column;
+background-color: #F5F5DC;
+border: 2px solid #FF6F3C;
+position: absolute;
+top: 50px;
+right: 10px;
+width: 250px;
+box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+text-align: right;
+z-index: 1000;
 }
 
-.dropdown-content a {
-  display: block;
-  color: #FF6F3C;
-  padding: 10px 0;
-  font-size: 18px;
-  text-decoration: none;
+/* Menu-links */
+.menu li {
+padding: 10px;
+text-align: left;
 }
 
-.menu:hover .dropdown-content {
-  display: block;
+.menu a {
+text-decoration: none;
+color: #FF6F3C;
+font-size: 18px;
 }
 
-/* Undermenu styling */
-.submenu {
-  position: relative;
+.menu a:hover {
+text-decoration: underline;
 }
 
+/* Undermenu */
 .submenu-content {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 200px; /* Justeret for at placere undermenuen korrekt */
-  background-color: #F5F5DC;
-  border: 3px solid #FF6F3C;
-  width: 180px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+list-style-type: none;
+display: none; /* Skjul undermenu som standard */
+padding-left: 20px;
+background-color: #F5F5DC;
+border-left: 2px solid;
 }
 
 .submenu:hover .submenu-content {
-  display: block;
+display: block; /* Vis undermenu ved hover */
 }
+
+/* Aktiv menu */
+.menu.active {
+display: flex;
+}
+
+
+/*footer styling*/ 
+
+footer {
+  display: flex;
+  justify-content: space-evenly; /* Jævn afstand mellem sektionerne */
+  align-items: center; /* Centerer elementerne lodret */
+  padding: 5px;
+  padding-bottom: 1px;
+  color: #060606;
+  font-size: 15px;
+  border-top: 1px solid #FF6F3C; /* Øverste kant til adskillelse */
+  
+}
+
+footer div {
+  flex: 1; /* Hver sektion får lige meget plads */
+    text-align: center;
+    line-height: 1.6;
+    margin: 0 10px; /* Lidt margin på siderne for hver sektion */
+    
+}
+
+/* Special styling for hver sektion */
+.aabeningstider {
+  display: flex;
+  flex-direction: column; /* Så overskriften og tiden står under hinanden */
+}
+
+.aabeningstider div {
+  display: flex;
+  justify-content: space-between; /* Fordeler dag og tid til venstre og højre */
+  width: 100px; 
+  margin: 0 auto; 
+}
+
+.aabeningstider .day {
+  text-align: left;
+  width: 50%; /* Sørger for at dagene står til venstre */
+}
+
+.aabeningstider .time {
+  text-align: right;
+  width: 50%; /* Sørger for at tiderne står til højre */
+}
+
+/* Nyhedsbrev */
+.nyhedsbrev {
+  text-align: center;
+  font-size: 20px;
+  width: 20%;
+}
+.nyhedsbrev input[type="email"] {
+  padding: 5px;
+  margin-top: 10px;
+  width: 80%;
+  border: 1px solid #FF6F3C;
+  border-radius: 5px;
+  font-size: 0.9em;
+  background-color: #F5F5DC;
+}
+
+.nyhedsbrev button {
+  background: none;
+  border: 1px solid #FF6F3C;
+  padding: 5px 20px;
+  color: #FF6F3C;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nyhedsbrev button:hover {
+  background-color: #FF6F3C;
+  color: #fff;
+}
+
+
+
+ /* Styling for iPhone screens */
+ @media (max-width: 768px){
+  body{
+    font-size: 20px;
+  }
+
+  footer {
+    flex-direction: column; /* Holder kolonneopsætningen */
+    
+  }
+
+  .aabeningstider,
+  .nyhedsbrev,
+  .kontakt,
+  .lokation {
+    width: 100%; /* Sikrer, at sektionerne fylder hele skærmbredden */
+    max-width: 300px; /* Begrænser bredden for bedre læsbarhed */
+    margin: 0 auto; /* Centerer indholdet */
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  .nyhedsbrev input[type="email"] {
+    width: 100%; /* Justerer inputfeltet til at fylde hele sektionen */
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .nyhedsbrev button{
+    width: 40%;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+ 

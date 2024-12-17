@@ -1,0 +1,298 @@
+
+body{
+    background-color: #F5F5DC;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1{
+    position: relative;
+    top: 100px;
+    margin-bottom: 100px;
+
+  }
+
+  /* Styling på pop up billeder*/
+.horetelefon{
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  margin-left: 50px;
+  margin-top: -220px;
+  transform: rotate(-7deg);
+}
+
+.g-nogle {
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  margin-left: 1300px;
+  margin-top: 235px;
+  transform: rotate(22deg);
+}
+
+  /* Gorgoues*/
+
+  .artist-card {
+    display: flex;
+    align-items: flex-start; /* Sørger for, at toppen af teksten og billedet flugter */ 
+    width: 1400px;
+    text-align: center;
+    flex-direction: row;
+    
+  }
+
+  .artist-image {
+    max-width: 600px;
+    max-height: 400px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-top: 30px;
+   
+  }
+
+  .info{
+    text-align: right;
+    margin-right: 43px;
+  }
+  
+  .artist-info {
+    flex: 1;
+  }
+  
+  .artist-info h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* styling af stjerner*/
+  .checked {
+  color: orange;
+  margin-left: 20px;
+  
+  }
+
+  .artist-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-left: 70px;
+    margin-right: 30px;
+    width: 700px;
+    margin-top: 60px;
+  }
+  
+  .song-play audio {
+    margin-top: 10px;
+    width: 30%;
+    margin-bottom: 50px;
+    margin-top: 5px;
+  
+  }
+
+  .artist-reverse, .artist-card{
+    flex-direction: row-reverse; /* Skifter rækkefølgen: billede først, tekst bagefter */
+  }
+
+
+  /* Allen Anjeh*/
+
+  .artist-card2 {
+    display: flex;
+    align-items: flex-start; /* Sørger for, at toppen af teksten og billedet flugter */
+    gap: 20px; 
+    width: 1400px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;  }
+
+  .artist-image2 {
+    max-width: 600px;
+    max-height: 400px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-left: 40px;
+
+  }
+
+  .info2{
+    margin-left: 22px;
+  }
+  
+  .artist-info2 {
+    flex: 1;
+  }
+  
+  .artist-info2 h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+  
+  /* styling af stjerner*/
+  .checked {
+  color: orange;
+  margin-left: 20px;
+  }
+
+  .fa-star{
+   margin-left: 20px;
+  }
+
+  .artist-info2 p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    width: 700px;
+    margin-top: 50px;
+  }
+  
+  .song-play audio {
+    margin-top: 10px;
+    width: 30%;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    
+  }
+
+  h2{
+    margin-left: 20px;
+  }
+
+
+   /* Styling for iPhone screens */
+ @media (max-width: 768px){
+  h1{
+  font-size: 30px;
+  text-align: center
+  }
+
+  .logo img{
+    width: 80px;
+  }
+
+  .menu-btn {
+    position: fixed; /* Hold den synlig på skærmen */
+    top: 0;
+    right: 0;
+    width: 100%; /* Gør den fuld bredde */
+    height: auto;
+    margin-right: -160px;
+  }
+
+  .artist-info, .artist-info2 {
+  display: flex;
+  flex-direction: column; /* Lodret rækkefølge som standard */
+  
+}
+
+  .artist-card, .artist-card2 {
+    flex-direction: column; 
+    width: 350px; 
+    align-items: center; 
+    text-align: center; 
+    font-size: 20px;
+    margin-left: 30px;
+  }
+
+  /* Billedes størrelse */
+  .artist-image, .artist-image2 {
+    max-width: 90%; 
+    max-height: 300px; 
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 50px;
+  }
+
+  /* Lydfilens størrelse */
+  .song-play audio {
+    width: 80%; 
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+    order: 2;
+  }
+
+  /* Tekstens placering og størrelse */
+  .artist-info p, .artist-info2 p {
+    flex-direction: column-reverse;
+    width: 90%; 
+    margin-left: 0; 
+    margin-right: 0; 
+    font-size: 20px; 
+    margin-top: 20px; 
+    order: 3;
+  }
+
+  .artist-info h2, .artist-info2 h2 {
+    font-size: 20px; 
+    margin-top: 10px; 
+    order: 1;
+  }
+
+  .horetelefon,
+  .g-nogle {
+    display: none;
+}
+ }
+
+
+
+   /* Styling af iPad scrren */
+@media (min-width: 768px) and (max-width: 1194px) {
+  .menu-btn{
+    font-size: 70px;
+    margin-top: -20px;
+  }
+
+  .artist-info p,
+  .artist-info2 p{
+    width: 500px;
+    line-height: 2;
+    margin-right: 0px;
+    margin-left: 5px;
+    padding-right: 20px;
+  }
+
+  .artist-image, .artist-image2 {
+    max-width: 100%; 
+    max-height: 200px; 
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 10px;
+    
+   
+  }
+
+  .artist-card, .artist-card2 {
+    width: 900px; 
+    font-size: 20px;
+    margin-left: 100px;
+    padding: 10px; 
+    
+  
+}
+
+.info,
+.info2{
+  margin-top: -120px;
+  margin-left: 60px;
+}
+
+.horetelefon{
+  margin-left: 50px;
+  margin-top: -100px;
+  transform: rotate(-10deg);
+}
+
+.g-nogle {
+  margin-left: 900px;
+  margin-top: 360px;
+  transform: rotate(30deg);
+
+}
+
+
+
+}
